@@ -92,7 +92,6 @@ nav ul li a:hover {
 @media screen and (max-width: 460px) {
     nav ul li{
         display: grid;
-        grid-row: auto;
     }
 }
 
@@ -122,45 +121,34 @@ nav ul li a:hover {
     .card-grid {
         grid-template-areas: 'card1' 'card2' 'card3' 'card4';  
     }
+
+    .image-grid {
+        display: none;
+    }
 }
 
-.card1 {
+.card1, .card2, .card3, .card4 {
     background-color: #ffffff;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card1 {
     grid-area: card1;
 }
 
 .card2 {
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     grid-area: card2;
 }
 
 .card3 {
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     grid-area: card3;
 }
 
 .card4 {
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     grid-area: card4;
 }
 
