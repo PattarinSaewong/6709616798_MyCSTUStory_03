@@ -107,21 +107,57 @@ nav ul li a:hover {
 
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-areas : 'card1 card2 card3 card4'; 
     grid-gap: 20px; 
-   
 }
 
-.card {
+@media screen and (max-width: 600px) {
+    .card-grid {
+        grid-template-areas: 'card1' 'card2' 'card3' 'card4';  
+    }
+}
+
+.card1 {
     background-color: #ffffff;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    grid-area: card1;
 }
 
-.card:hover {
+.card2 {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    grid-area: card2;
+}
+
+.card3 {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    grid-area: card3;
+}
+
+.card4 {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    grid-area: card4;
+}
+
+.card1:hover, .card2:hover, .card3:hover, .card4:hover {
     transform: translateY(-10px);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
