@@ -89,7 +89,7 @@ nav ul li a:hover {
     background-color: #777777;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 460px) {
     nav ul li{
         display: grid;
         grid-row: auto;
