@@ -224,28 +224,28 @@ nav ul li a:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
-.card ul {
+.card1 ul, .card2 ul, .card3 ul, .card4 ul {
     list-style: none;
     padding-left: 0;
 }
 
-.card ul li {
+.card1 ul li, .card2 ul li, .card3 ul li, .card4 ul li {
     display: flex;
     align-items: flex-start; 
     margin-bottom: 10px;
 }
 
-.card ul li i {
+.card1 ul li i, .card2 ul li i, .card3 ul li i, .card4 ul li i {
     margin-right: 10px;
     margin-top: 2px; 
 }
 
-.card h3 {
+.card1 h3, .card2 h3, .card3 h3, .card4 h3 {
     margin-top: 0;
     color: #454545;
 }
 
-.card h4 {
+.card1 h4, .card2 h4, .card3 h4, .card4 h4 {
     margin-bottom: 15px;
     color: #8f8f8f;
 }
