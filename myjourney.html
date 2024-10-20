@@ -10,9 +10,32 @@
 </head>
 <body>
     <header>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="index.html">Home</a>
+            <a href="myjourney.html">My journey</a>
+            <a href="myfuture.html">My future</a>
+        </div>
+      
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">☰</button>  
+        </div>
+
         <h1>YW Journey</h1>
         <p>Computer Science | Thammasat University</p>
     </header>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+  
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
 
     <nav>
         <ul>
