@@ -122,7 +122,6 @@ nav ul li a:hover {
     .sidebar, #main {
         display: none;
     }
-
 }
 
 @media screen and (max-width: 600px) {
@@ -171,7 +170,8 @@ nav ul li a:hover {
       .openbtn {
         font-size: 20px;
         position:absolute;
-        top: 20px;
+        left: 10px;
+        top: 10px;
         cursor: pointer;
         background-color: #2b2b2b;
         color: white;
